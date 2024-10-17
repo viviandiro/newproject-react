@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./index.css";
 import { Hourglass } from "react-loader-spinner";
 import Weather from "./Weather";
 
