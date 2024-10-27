@@ -38,7 +38,7 @@ export default function Weather() {
     </form>
   );
 
-  if (mostrar != 0) {
+  if (mostrar) {
     return (
       <div className="Weather">
         {form}
