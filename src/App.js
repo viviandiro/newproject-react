@@ -10,7 +10,11 @@ function App() {
 
       <div class="footer">
         <span>
-          <a href="https://github.com/viviandiro/newproject-react" target="">
+          <a
+            href="https://github.com/viviandiro/newproject-react"
+            alt="logo"
+            target=""
+          >
             <img class="icon-git " src={milogo} />
           </a>
           <br />
