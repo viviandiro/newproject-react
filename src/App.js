@@ -10,14 +10,10 @@ function App() {
 
       <div class="footer">
         <span>
-          <a
-            href="https://github.com/viviandiro/newproject-react"
-            target="_blank"
-          >
-            {" "}
+          <a href="https://github.com/viviandiro/newproject-react" target="">
             <img class="icon-git " src={milogo} />
           </a>
-          <br/>
+          <br />
           <strong>By VivianDiro </strong>
         </span>
       </div>
