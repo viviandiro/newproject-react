@@ -1,5 +1,5 @@
 import "./index.css";
-import milogo from "./images/github3.png";
+//import milogo from "./images/github3.png";
 import Weather from "./Weather";
 
 function App() {
@@ -9,17 +9,7 @@ function App() {
       <Weather cityPrincipal="Bucaramanga" />
 
       <div class="footer">
-        <span>
-          <a
-            href="https://github.com/viviandiro/newproject-react"
-            alt="logo"
-            target=""
-          >
-            <img class="icon-git " src={milogo} />
-          </a>
-          <br />
-          <strong>By VivianDiro </strong>
-        </span>
+        <strong>By VivianDiro </strong>
       </div>
     </div>
   );
@@ -27,3 +17,12 @@ function App() {
 export default App;
 // <div id="container">{showInfo ? <Intro info={info} /> : null}</div>
 //   <Weather setInfo={handleUpdateInfo} />
+/* <span>
+          <a
+            href="https://github.com/viviandiro/newproject-react"
+            alt="logo"
+            target=""
+          >
+            <img class="icon-git " src={milogo} />
+          </a>
+          <br /> */
