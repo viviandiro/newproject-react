@@ -6,7 +6,7 @@ import Intro from "./introduction";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.cityPrincipal);
-  const fahrenheit = celsiusToFahrenheit(weather.temperature);
+  
 
   function datos(response) {
     setWeather({
