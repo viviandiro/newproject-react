@@ -6,6 +6,7 @@ import Intro from "./introduction";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.cityPrincipal);
+  const fahrenheit = celsiusToFahrenheit(weather.temperature);
 
   function datos(response) {
     setWeather({
@@ -19,6 +20,11 @@ export default function Weather(props) {
     });
   }
   console.log(weather);
+
+
+  function celsiusToFahrenheit(celsius) {
+    return Math.round((celsius * 9) / 5 + 32);
+  }
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -54,7 +60,7 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         {form}
-        <Intro data={weather} />
+        <Intro data={weather} celsiusToFahrenheit={celsiusToFahrenheit} />
 
         <div className="row justify-content-center flex">
           <div className="col">
